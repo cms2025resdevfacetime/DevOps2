@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SpaRoot>..\devops2.client</SpaRoot>
+    <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
+    <SpaProxyServerUrl>https://localhost:5173</SpaProxyServerUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net8.0\appsettings.json" />
+    <Content Include="bin\Debug\net8.0\DevOps2.Server.deps.json" />
+    <Content Include="bin\Debug\net8.0\DevOps2.Server.runtimeconfig.json" />
+    <Content Include="bin\Debug\net8.0\publish\appsettings.Development.json" />
+    <Content Include="bin\Debug\net8.0\publish\appsettings.json" />
+    <Content Include="bin\Debug\net8.0\publish\DevOps2.Server.deps.json" />
+    <Content Include="bin\Debug\net8.0\publish\DevOps2.Server.runtimeconfig.json" />
+    <Content Include="bin\Debug\net8.0\publish\wwwroot\assets\index-BPvgi06w.css" />
+    <Content Include="bin\Debug\net8.0\publish\wwwroot\index.html" />
+    <Content Include="bin\Debug\net8.0\spa.proxy.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
+      <Version>8.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\devops2.client\devops2.client.esproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0\DevOps2.Server.dll" />
+    <None Include="bin\Debug\net8.0\DevOps2.Server.exe" />
+    <None Include="bin\Debug\net8.0\DevOps2.Server.pdb" />
+    <None Include="bin\Debug\net8.0\Microsoft.AspNetCore.SpaProxy.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.OpenApi.dll" />
+    <None Include="bin\Debug\net8.0\publish\DevOps2.Server.dll" />
+    <None Include="bin\Debug\net8.0\publish\DevOps2.Server.exe" />
+    <None Include="bin\Debug\net8.0\publish\DevOps2.Server.pdb" />
+    <None Include="bin\Debug\net8.0\publish\Microsoft.AspNetCore.SpaProxy.dll" />
+    <None Include="bin\Debug\net8.0\publish\Microsoft.OpenApi.dll" />
+    <None Include="bin\Debug\net8.0\publish\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Debug\net8.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Debug\net8.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Debug\net8.0\publish\web.config" />
+    <None Include="bin\Debug\net8.0\publish\wwwroot\assets\index-C9WTJNJz.js" />
+    <None Include="bin\Debug\net8.0\publish\wwwroot\vite.svg" />
+    <None Include="bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+  </ItemGroup>
+
+</Project>
