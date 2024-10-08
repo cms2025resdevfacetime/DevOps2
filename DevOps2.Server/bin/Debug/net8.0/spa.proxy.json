@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "E:\\Prototype\\DevOps2\\DevOps2.Server\\..\\devops2.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
